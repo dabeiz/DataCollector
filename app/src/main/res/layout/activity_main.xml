@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/cbSCREEN"
+                android:text="SCREEN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/cbWIFI"
+                android:text="WIFI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/cbTELE"
+                android:text="TELE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/cbLOCATION"
+                android:text="LOCATION"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/cbBLUETOOTH"
+                android:text="BLUETOOTH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/cbAUDIO"
+                android:text="AUDIO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/cbVIDEO"
+                android:text="VIDEO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!-- 因为无法将app升级为系统app, 因此无法使用此功能
+            <CheckBox
+                android:id="@+id/cbCPU"
+                android:text="CPU"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            -->
+
+            <!-- 各类sensors, A-Z -->
+
+            <CheckBox
+                android:id="@+id/cbACCELEROMETER"
+                android:text="ACCELEROMETER"
+                android:enabled="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/cbACCELEROMETER_UNCALIBRATED"
+                android:text="ACCELEROMETER_UNCALIBRATED"
+                android:enabled="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/cbAMBIENT_TEMPERATURE"
+                android:text="AMBIENT_TEMPERATURE"
+                android:enabled="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/cbGAME_ROTATION_VECTOR"
+                android:text="GAME_ROTATION_VECTOR"
+                android:enabled="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/cbGEOMAGNETIC_ROTATION_VECTOR"
+                android:text="GEOMAGNETIC_ROTATION_VECTOR"
+                android:enabled="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/cbGRAVITY"
+                android:text="GRAVITY"
+                android:enabled="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/cbGYROSCOPE"
+                android:text="GYROSCOPE"
+                android:enabled="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/cbGYROSCOPE_UNCALIBRATED"
+                android:text="GYROSCOPE_UNCALIBRATED"
+                android:enabled="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/cbLIGHT"
+                android:text="LIGHT"
+                android:enabled="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/cbLINEAR_ACCELERATION"
+                android:text="LINEAR_ACCELERATION"
+                android:enabled="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/cbMAGNETIC_FIELD"
+                android:text="MAGNETIC_FIELD"
+                android:enabled="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/cbMAGNETIC_FIELD_UNCALIBRATED"
+                android:text="MAGNETIC_FIELD_UNCALIBRATED"
+                android:enabled="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/cbORIENTATION"
+                android:text="ORIENTATION"
+                android:enabled="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/cbPRESSURE"
+                android:text="PRESSURE"
+                android:enabled="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/cbPROXIMITY"
+                android:text="PROXIMITY"
+                android:enabled="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/cbRELATIVE_HUMIDITY"
+                android:text="RELATIVE_HUMIDITY"
+                android:enabled="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/cbROTATION_VECTOR"
+                android:text="ROTATION_VECTOR"
+                android:enabled="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/cbSTEP_COUNTER"
+                android:text="STEP_COUNTER"
+                android:enabled="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ToggleButton
+        android:id="@+id/tbStartStop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textOn="Stop"
+        android:textOff="Start" />
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sensorlogger"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <!--注册存储读写权限, 在packageManager.PERMISSON_GRANTED用到-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!--注册关于wifi扫描的权限-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!--关于手机信号的权限-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!--关于蓝牙的权限-->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <!--关于录制音频和视频的权限 以及实现免预览时要用到的悬浮窗口权限-->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!--android 9.0上使用前台服务，需要添加权限-->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <!--关于获取CPU和MEM使用情况时读取/proc文件-->
+    <!--<uses-permission android:name="android.permission.READ_LOGS" tools:ignore="ProtectedPermissions" />-->
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--service必须要在xml文件中注册-->
+        <service android:name=".SensorService" />
+        <service android:name=".ScreenService" />
+        <service android:name=".WifiService" />
+        <service android:name=".TeleService" />
+        <service android:name=".LocationService" />
+        <service android:name=".BluetoothService" />
+        <service android:name=".MediaService" />
+        <!-- 因为无法将app升级为系统app, 因此无法使用此功能 <service android:name=".CpuService" /> -->
+
+
+    </application>
+
+</manifest>
